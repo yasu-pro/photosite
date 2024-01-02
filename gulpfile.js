@@ -19,6 +19,8 @@ import { deleteSync } from 'del';
 
 const isDevelopment = process.env.NODE_ENV === 'development';
 // Font指定
+// Google Fonts
+// url: https://fonts.google.com/
 const fontUrl =
 	'https://fonts.googleapis.com/css2?family=Lato&family=Shippori+Mincho+B1&display=swap';
 
