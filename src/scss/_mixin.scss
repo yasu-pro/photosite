@@ -42,5 +42,5 @@
 }
 
 @mixin line-h($fontsize, $lin) {
-	line-height: $lin / $fontsize;
+	line-height: calc($lin / $fontsize);
 }
