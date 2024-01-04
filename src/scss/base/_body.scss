@@ -7,7 +7,8 @@ html {
 	font-family: $Gothic;
 }
 body {
-	min-width: 1080px;
+	background-color: #f4f9ff;
+	// min-width: 1080px;
 	// min-width: 1200px;
 	color: $textColor;
 	@include fz($baseFont);
