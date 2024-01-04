@@ -4,15 +4,19 @@
 @use '../mixin' as *;
 
 .wrapper {
-	width: 1000px;
-	margin-left: auto;
-	margin-right: auto;
+	// width: 1000px;
+	// margin-left: auto;
+	// margin-right: auto;
+	@include wrapper(600px);
 }
 
 .mainvisual {
-	width: 1280px;
+	max-width: 1280px;
 	height: 400px;
 	margin: 0 auto;
+	@include bpPcs {
+		padding: 0 10px;
+	}
 	img {
 		width: 100%;
 		height: 100%;
@@ -21,8 +25,7 @@
 }
 
 .index {
-	width: 1280px;
-	padding: 35px $baseWidthPadding 33px;
+	padding: 35px 0 33px;
 	margin: 60px auto 0;
 	background-color: #ffffff;
 	ol {
@@ -53,19 +56,26 @@
 }
 
 .detail {
-	width: 1280px;
-	padding: 35px $baseWidthPadding 33px;
+	padding: 35px 0 33px;
 	margin: 65px auto 0;
 
 	&__box {
 		display: flex;
 		gap: 60px;
 		margin-top: 14px;
+		@include bpTb {
+			flex-direction: column;
+			gap: 25px;
+		}
 	}
 
 	&__img {
 		width: 270px;
 		height: 270px;
+		@include bpTb {
+			width: 100%;
+			height: auto;
+		}
 		img {
 			width: 100%;
 			height: 100%;
@@ -75,6 +85,9 @@
 
 	&__content {
 		width: 270px;
+		@include bpTb {
+			width: 100%;
+		}
 		&--title {
 			@include fz(18);
 			font-weight: bold;

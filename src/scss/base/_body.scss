@@ -15,8 +15,8 @@ body {
 	font-weight: $baseWeight;
 	line-height: $lineHeight;
 	@include bpTb {
-		@include fz($baseFontSp);
-		min-width: auto;
+		// @include fz($baseFontSp);
+		// min-width: auto;
 	}
 }
 a {
